@@ -80,3 +80,38 @@ footer {
     text-align: center;
     padding: 16px;
 }
+
+/* Para que se vea en el movil */
+@media (max-width: 768px) {
+    main {
+        padding: 16px;
+    }
+
+    .galeria h2 {
+        font-size: 24px;
+    }
+
+    .tarjeta p {
+        font-size: 7.2px;
+        padding: 3.2px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 9.6px;
+    }
+
+    .tarjeta {
+        border: 1px solid #45a29e;
+    }
+
+    .tarjeta img {
+        height: 150px; /* Ajusta las imágenes para que no ocupen demasiado espacio */
+    }
+
+    .tarjeta p {
+        font-size: 6.4px;
+        padding: 2.4px;
+    }
+}
