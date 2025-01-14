@@ -120,3 +120,13 @@ footer {
         padding: 2.4px;
     }
 }
+
+@media (max-width: 1024px) {
+    .juego {
+        grid-template-columns: repeat(4, 1fr); /* Añadir un punto intermedio entre 5 y 2 columnas */
+    }
+
+    .tarjeta p {
+        font-size: 8px;
+    }
+}
