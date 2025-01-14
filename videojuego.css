@@ -81,8 +81,7 @@ footer {
     padding: 16px;
 }
 
-/* Para que se vea en el movil */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (max-height: 720px) {
     main {
         padding: 16px;
     }
@@ -91,41 +90,19 @@ footer {
         font-size: 24px;
     }
 
-    .tarjeta p {
-        font-size: 7.2px;
-        padding: 3.2px;
-    }
-}
-
-@media (max-width: 720px) {
-    header .logo h1 {
-        font-size: 9.6px;
-    }
-
     .juego {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    }
-
-    .tarjeta {
-        border: 1px solid #45a29e;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de más, para pantallas más pequeñas */
+        gap: 20px;
+        padding: 20px;
     }
 
     .tarjeta img {
-        height: 150px; /* Ajusta las imágenes para que no ocupen demasiado espacio */
-    }
-
-    .tarjeta p {
-        font-size: 6.4px;
-        padding: 2.4px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .juego {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Añadir un punto intermedio entre 5 y 2 columnas */
+        height: 180px;  /* Ajusta el tamaño de las imágenes para que se vean bien en este dispositivo */
+        object-fit: cover;
     }
 
     .tarjeta p {
         font-size: 8px;
+        padding: 5px;
     }
 }
