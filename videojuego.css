@@ -82,7 +82,7 @@ footer {
 }
 
 /* Para que se vea en el movil */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     main {
         padding: 16px;
     }
@@ -97,7 +97,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
     header .logo h1 {
         font-size: 9.6px;
     }
@@ -122,8 +122,7 @@ footer {
 
 @media (max-width: 1024px) {
     .juego {
-        grid-template-columns: repeat(2, 1fr); /* Asegura que haya 2 columnas por fila */
-        gap: 20px; /* Ajusta el espacio entre las columnas si es necesario */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Añadir un punto intermedio entre 5 y 2 columnas */
     }
 
     .tarjeta p {
