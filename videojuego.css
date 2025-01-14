@@ -102,6 +102,11 @@ footer {
         font-size: 9.6px;
     }
 
+    .juego {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+
     .tarjeta {
         border: 1px solid #45a29e;
     }
