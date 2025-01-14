@@ -103,7 +103,7 @@ footer {
     }
 
     .juego {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     }
 
 
@@ -123,7 +123,7 @@ footer {
 
 @media (max-width: 1024px) {
     .juego {
-        grid-template-columns: repeat(2, 1fr); /* Añadir un punto intermedio entre 5 y 2 columnas */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Añadir un punto intermedio entre 5 y 2 columnas */
     }
 
     .tarjeta p {
