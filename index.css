@@ -105,4 +105,22 @@ footer {
         font-size: 8px;
         padding: 5px;
     }
+
+    .star-wars {
+    position: relative;
+}
+
+.star-wars::after {
+    content: "✖";
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
 }
