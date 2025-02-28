@@ -88,16 +88,15 @@ footer {
 .star-wars::after {
     content: "✖";
     color: red;
-    font-size: 50px;
+    font-size: 200px; /* Ajusta este valor para que la "X" sea más grande */
     font-weight: bold;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 5px 12px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra la "X" en la imagen */
+    background: none; /* Elimina el fondo */
 }
+
 
 @media (max-width: 1024px) and (max-height: 720px) {
     main {
